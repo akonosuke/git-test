@@ -1,0 +1,60 @@
+アカウント登録の状態から。
+
+
+kawaguchiakiko@MacBook-Pro ~ % git --version
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+kawaguchiakiko@MacBook-Pro ~ % git config --global user.name "akiko"     
+kawaguchiakiko@MacBook-Pro ~ % git config --global user.email "a.cuu1025@gmail.com"
+kawaguchiakiko@MacBook-Pro ~ % git --version
+git version 2.24.3 (Apple Git-128)
+kawaguchiakiko@MacBook-Pro ~ % git config --global -l
+user.name=akiko
+user.email=a.cuu1025@gmail.com
+kawaguchiakiko@MacBook-Pro ~ % pwd
+/Users/kawaguchiakiko
+kawaguchiakiko@MacBook-Pro ~ % ls
+Applications		Library
+Creative Cloud Files	Movies
+Desktop			Music
+Documents		Pictures
+Downloads		Public
+kawaguchiakiko@MacBook-Pro ~ % mkdir git-test
+kawaguchiakiko@MacBook-Pro ~ % cd Desktop
+kawaguchiakiko@MacBook-Pro Desktop % mkdir git-test
+kawaguchiakiko@MacBook-Pro Desktop % cd git-test
+kawaguchiakiko@MacBook-Pro git-test % cd Desktop git-test
+cd: no such file or directory: /Users/kawaguchiakiko/git-test/git-test
+kawaguchiakiko@MacBook-Pro git-test % git init
+Initialized empty Git repository in /Users/kawaguchiakiko/Desktop/git-test/.git/
+kawaguchiakiko@MacBook-Pro git-test % git add .
+kawaguchiakiko@MacBook-Pro git-test % git commit -m "初めてのGitです"
+[master (root-commit) 92b6df7] 初めてのGitです
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+kawaguchiakiko@MacBook-Pro git-test % git log
+commit 92b6df79a6b0eda3b69311f361fbf210442b4d00 (HEAD -> master)
+Author: akiko <a.cuu1025@gmail.com>
+Date:   Wed Jan 13 20:57:41 2021 +0900
+
+    初めてのGitです
+kawaguchiakiko@MacBook-Pro git-test % git remote add origin https://github.com/akonosuke/git-test.git
+kawaguchiakiko@MacBook-Pro git-test % git branch -M main     
+kawaguchiakiko@MacBook-Pro git-test % git push -u origin main
+Username for 'https://github.com': git branch -M main
+Password for 'https://git branch -M main@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/akonosuke/git-test.git/'
+kawaguchiakiko@MacBook-Pro git-test % git push -u origin main
+Username for 'https://github.com': akonosuke
+Password for 'https://akonosuke@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 417 bytes | 417.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/akonosuke/git-test.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+kawaguchiakiko@MacBook-Pro git-test % 
+
