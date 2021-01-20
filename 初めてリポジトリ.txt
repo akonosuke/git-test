@@ -1,30 +1,30 @@
-Minoru Inada20:30
+
 git --version
 【gitのバージョンを確認】
 git --version
-Minoru Inada20:32
+
 【設定を確認】
 git config --global -l
 山本拓海20:32
  -l
-Minoru Inada20:34
+
 【名前の設定】
 git config --global user.name "Minoru Inada"
-Minoru Inada20:35
+
 【メールアドレスの設定】
 git config --global user.email "jyagamino@gmail.com"
-Minoru Inada20:40
+
 【windows限定 自分いるところに何があるか】
 dir
-Minoru Inada20:41
+
 【Mac限定  自分いるところに何があるか】
 ls
-Minoru Inada20:42
+
 cd desktop でデスクトップに移動
-Minoru Inada20:45
+
 mkdir git-test で「git-test」フォルダを作成
 cd git-test で「git-test」フォルダに移動する
-Minoru Inada20:47
+
 git init で新しくgitリポジトリを作成
-Minoru Inada20:53
+
 git add . ですべてのファイルをステージングエリアに追加する
